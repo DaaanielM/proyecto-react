@@ -64,19 +64,33 @@ header p span {
 }
 
 .producto button {
-  padding       : 10px;
   text-transform: uppercase;
-  background    : green;
-  color         : aliceblue;
+  color         : black;
   border        : none;
   border-radius : 7px;
   transition    : .3s ease-in-out;
+  cursor        : pointer;
+
 }
 
-.producto button:hover {
-  background : aliceblue;
-  color      : green;
-  cursor     : pointer;
-  font-weight: bold;
+.stock {
+  background    : #30C615;
+  color         : aliceblue;
+  font-weight   : 500;
+  display       : block;
+  padding       : 10px;
+  text-transform: uppercase;
+  border-radius : 8px;
+  font-weight   : bold;
+}
 
+.sin-stock {
+  background    : rgb(230, 173, 16);
+  color         : aliceblue;
+  font-weight   : 500;
+  display       : block;
+  padding       : 10px;
+  text-transform: uppercase;
+  border-radius : 8px;
+  font-weight   : bold;
 }

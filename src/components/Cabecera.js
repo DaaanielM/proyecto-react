@@ -14,6 +14,7 @@ export default function Cabecera(props) {
 			{/* maquetar Cabecera aquí */}
 			<h1>Carrito de compras</h1>
 			<p>
+				{/*Aquí se muestra la cantidad de productos que hay en el contador*/}
 				Cantidad de productos <span>{props.cantidad}</span>
 			</p>
 		</header>
