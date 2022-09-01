@@ -8,7 +8,7 @@
 import { useState } from 'react';
 import Cabecera from './components/Cabecera';
 import Listado from './components/Listado';
-
+import Footer from './components/Footer';
 function App(props) {
 	// Usamos un estado para contabilizar el total de elementos comprados.
 	const [cantidad, setCantidad] = useState(0);
@@ -25,6 +25,7 @@ function App(props) {
 			*/}
 			<Cabecera cantidad={cantidad} />
 			<Listado changeCantidad={changeCantidad} />
+			<Footer />
 		</div>
 	);
 }

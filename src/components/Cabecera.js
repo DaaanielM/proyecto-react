@@ -15,7 +15,8 @@ export default function Cabecera(props) {
 			<h1>Carrito de compras</h1>
 			<p>
 				{/*Aquí se muestra la cantidad de productos que hay en el contador*/}
-				Cantidad de productos <span>{props.cantidad}</span>
+				Cantidad de productos
+				<span className='contador'>{props.cantidad}</span>
 			</p>
 		</header>
 	);

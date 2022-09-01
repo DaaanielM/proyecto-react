@@ -29,18 +29,17 @@ export default function Item({ item, changeCantidad }) {
 
 			<div key={item.id} className='producto'>
 				<h3>{item.producto.nombre}</h3>
+				<img alt='img' src={item.producto.imagen} />
 				<p>{item.producto.descripcion}</p>
 				<h5>
-					En stock:
-					{stock > 0 ? stock : <span>agotado</span>}
+					📝En stock: {stock > 0 ? stock : <span> agotado😩</span>}
 				</h5>
 				{/* El disabled, deshabilita el boton y button recibe la función handleClick que restara el stock */}
-				<button disabled={stock === 0} onClick={handleClick}>
-					{stock > 0 ? (
-						<span className='stock'>comprar</span>
-					) : (
-						<span className='sin-stock'>sin stock</span>
-					)}
+				<button
+					className='stock'
+					disabled={stock === 0}
+					onClick={handleClick}>
+					{stock > 0 ? <span>comprar</span> : <span>sin stock</span>}
 				</button>
 			</div>
 		</>
